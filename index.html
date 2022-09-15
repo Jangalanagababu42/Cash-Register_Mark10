@@ -9,14 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="heading">Cash Register Manager</h1>
+        <h1 class="heading">💵Cash Register Manager💵</h1>
         <p class="description">
           Enter the bill amount and cash given by the customer and know minimum number of notes to return.
         </p>
+        
         <label for="bill-amount">Bill Amount:</label>
+        <small style="color:red">*Note:(Only accepting value in digits)</small>
         <input id="bill-amount" type="number">
-        <button>Next</button>
-        <label for="cash-given">Chash Given</label>
+        <label for="cash-given">Cash Given</label>
+        <small style="color:red">*Note:(Only accepting value in digits)</small>
         <input id="cash-given" type="number">
         <button id="check-button">Check</button>
         <p id="error-message"></p>

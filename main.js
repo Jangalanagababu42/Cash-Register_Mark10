@@ -14,7 +14,7 @@ checkButton.addEventListener("click",function validateBillAmount(){
             const amountToBeReturned = cashGiven.value-billAmount.value
             calculateChange(amountToBeReturned);
         }else{
-            showMessage("Do you want to wash plates?")
+            showMessage("😀🍽️Do you want to wash plates?😀🍽️")
         }
     }else{
         showMessage("Invalid Bill Amount");
