@@ -9,11 +9,16 @@ const availableNotes = [2000,500,100,20,10,5,1];
 
 checkButton.addEventListener("click",function validateBillAmount(){
     hideMessage();
-    if (billAmount.value>0) {
-        if(cashGiven.value >= billAmount.value){
+    if (Number(billAmount.value)>0 && Number(cashGiven.value)>0) {
+        if(Number(cashGiven.value) >=Number(billAmount.value)>0){
             const amountToBeReturned = cashGiven.value-billAmount.value
             calculateChange(amountToBeReturned);
-        }else{
+        }
+        else if(Number(billAmount.value)===Number(cashGiven.value)){
+           showMessage("😀No change to be Returned😀")
+        }
+        
+        else(Number(cashGiven.value) < Number(billAmount.value) && Number(cashGiven.value) > 0) {
             showMessage("😀🍽️Do you want to wash plates?😀🍽️")
         }
     }else{
