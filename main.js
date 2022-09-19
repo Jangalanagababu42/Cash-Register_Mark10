@@ -18,7 +18,7 @@ checkButton.addEventListener("click",function validateBillAmount(){
            showMessage("😀No change to be Returned😀")
         }
         
-        else(Number(cashGiven.value) < Number(billAmount.value) && Number(cashGiven.value) > 0) {
+        else if(Number(cashGiven.value) < Number(billAmount.value) && Number(cashGiven.value) > 0) {
             showMessage("😀🍽️Do you want to wash plates?😀🍽️")
         }
     }else{
